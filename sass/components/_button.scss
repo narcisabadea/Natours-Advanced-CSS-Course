@@ -50,6 +50,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &--animated {
     animation-name: moveInButton;
     animation-duration: 1s;
