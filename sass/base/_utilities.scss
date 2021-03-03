@@ -2,7 +2,15 @@
   &-center-text {
     text-align: center;
   }
-  &-margin-bottom-8 {
-    margin-bottom: 8rem;
+  &-margin-bottom{
+    &-small {
+      margin-bottom: 1.5rem;
+    }
+    &-medium {
+      margin-bottom: 4rem;
+    }
+    &-big {
+      margin-bottom: 8rem;
+    }
   }
 }
