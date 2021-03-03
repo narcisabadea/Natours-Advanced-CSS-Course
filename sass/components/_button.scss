@@ -1,6 +1,7 @@
 .btn {
-    &:link, &:visited {
-      text-transform: uppercase;
+  &:link,
+  &:visited {
+    text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
     display: inline-block;
@@ -9,52 +10,52 @@
     font-size: 1.6rem;
     /* on the initial state */
     transition: all 0.2s;
-    }
-  
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-  
-      &::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-      }
-    }
-  
-    &:active {
-      transform: translateY(-1px);
-      box-shadow: 0 0.5rem 1rem rgba(0$color-black, 0.2);
-    }
-  
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
     &::after {
-      /* must add content and display */
-      content: "";
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      border-radius: 10rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all 0.4s;
-    }
-  
-    &--white {
-      background-color: $color-white;
-      color: $color-grey-dark;
-  
-      &::after {
-        background-color: $color-white;
-      }
-    }
-    
-    &--animated {
-      animation-name: moveInButton;
-      animation-duration: 1s;
-      animation-timing-function: ease-out;
-      animation-delay: 0.75s;
-      /* get's the initial state for 0% before the animation starts */
-      animation-fill-mode: backwards;
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
     }
   }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &::after {
+    /* must add content and display */
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--animated {
+    animation-name: moveInButton;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.75s;
+    /* get's the initial state for 0% before the animation starts */
+    animation-fill-mode: backwards;
+  }
+}
