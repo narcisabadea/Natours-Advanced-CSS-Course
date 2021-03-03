@@ -1,0 +1,20 @@
+// partial sass file
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* the borders and the paddings are no longer added to the total width or total height that we specify for a box */
+  box-sizing: inherit;
+}
+
+html {
+  // this defines what 1 rem is
+  font-size: 62.5%;
+}
+
+body {
+  /* all children with fonts inherit from the body*/
+  box-sizing: border-box;
+}
