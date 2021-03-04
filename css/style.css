@@ -526,7 +526,8 @@ body {
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .4s .2s;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: 0; }
   .popup__left {
     width: 33.3333333%;
     display: table-cell;
