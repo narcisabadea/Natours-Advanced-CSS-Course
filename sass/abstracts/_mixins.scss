@@ -1,6 +1,6 @@
 @mixin clearfix {
   &::after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
   }
@@ -23,32 +23,33 @@
 -big-desktop
 */
 
-@mixin respond-phone{
-  @media (max-width: 600px) {
-    @content 
-  }
-}
+//em are best for media queries
+//1em = 16px
+
+// phone formally 600px
+// tab-port formally 900px
+// tab-land formally 1200px
+// big-desktop formally 1200px
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 600px) {
-      @content 
+    @media (max-width: 37.5em) {
+      @content;
     }
   }
   @if $breakpoint == tab-port {
-    @media (max-width: 900px) {
-      @content 
+    @media (max-width: 56.25em) {
+      @content;
     }
   }
   @if $breakpoint == tab-land {
-    @media (max-width: 1200px) {
-      @content 
+    @media (max-width: 75em) {
+      @content;
     }
   }
   @if $breakpoint == big-desktop {
-    @media (min-width: 1800px) {
-      @content 
+    @media (min-width: 112.5em) {
+      @content;
     }
   }
 }
-
