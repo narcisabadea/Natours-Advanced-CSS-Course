@@ -12,6 +12,12 @@
     margin-bottom: 8rem;
     //for inline elements
     text-align: center;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
+
+
   }
 
   &__logo{
