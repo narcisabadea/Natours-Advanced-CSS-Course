@@ -31,6 +31,10 @@
 // tab-land formally 1200px
 // big-desktop formally 1200px
 
+
+//ORDER:
+// Base + typography > general layout + grid > page layout > components
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
