@@ -11,7 +11,7 @@ To run the project on your machine use ```npm run start``` for a dev server. Nav
 ## Screenshots
 * HP
 
-![Natours homepage](/img/1.png?raw=true "Natours homepage")
+![Natours homepage](/img/1.jpg?raw=true "Natours homepage")
 
 * Menu
 
