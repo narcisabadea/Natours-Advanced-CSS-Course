@@ -4,7 +4,9 @@ Natours LP created using HTML, CSS, SASS(SCSS).
 
 ## Development
 
+<!--- 
 The LP is also live [HERE](https://natour-tours.netlify.app/).
+ --->
 
 To run the project on your machine use ```npm run start``` for a dev server. Navigate to http://localhost:8080/.
 
