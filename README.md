@@ -1,6 +1,6 @@
 # Natours LP
 
-Natours LP created using HTML, CSS, SASS(SCSS). 
+Natours LP created using HTML, CSS, SASS (SCSS). 
 
 ## Development
 
